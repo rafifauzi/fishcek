@@ -209,6 +209,10 @@ Login
     border: 2px solid #d32f2f;
   }
   
+  .login100-form-btn:focus, .facebook100-form-btn:focus, .google100-form-btn:focus{
+    outline: none;
+  }
+
   .login100-form-btn:hover {
     background: #31a9e1 !important;
     color: #fff;
