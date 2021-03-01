@@ -269,6 +269,10 @@
 
   });
 
+  //upload file
+  $('.file-upload').file_upload();
+
+  //rating
   $('#ratingStar1').click(function(){var a = $('#ratingStar1 span').text(); $('#ratingInput').val(a); }); 
   $('#ratingStar2').click(function(){var a = $('#ratingStar2 span').text(); $('#ratingInput').val(a); });
   $('#ratingStar3').click(function(){var a = $('#ratingStar3 span').text(); $('#ratingInput').val(a); }); 

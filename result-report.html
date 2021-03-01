@@ -27,6 +27,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/util.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Arsha - v2.3.0
@@ -39,21 +40,21 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
+  <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><img src="assets/img/fish.png" alt="" class="img-fluid"><a href="index.html">Fishcek</a></h1> <!-- Logo -->
+      <h1 class="logo mr-auto"><a href="index.html"><img src="assets/img/logo-full.png" alt="" class="img-fluid"></a></h1> <!-- Logo -->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/fish.png" alt="" class="img-fluid"></a> -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li><a href="index.html">Beranda</a></li>
-          <li class="active"><a href="result-report.html">Cek Penipuan</a></li>
+          <li class="active"><a href="cekPenipuan.html">Cek Penipuan</a></li>
           <li><a href="penipuan.html">Penipuan</a></li>
           <li><a href="#portfolio">RekAn</a></li>
-          <!-- <li><a href="#team">Team</a></li>-->
-          <!-- <li class="drop-down"><a href="">Drop Down</a>
+          <!-- <li><a href="#team">Team</a></li>
+          <li class="drop-down"><a href=""><i class="icon icofont-heart"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="drop-down"><a href="#">Deep Drop Down</a>
@@ -75,8 +76,80 @@
         </ul>
       </nav><!-- .nav-menu -->
       
-      <a href="login.html" class="get-login-btn scrollto ml-5">Login</a>
-      <a href="register.html" class="get-register-btn scrollto">Daftar</a>
+      <!--<a href="#about" class="get-login-btn scrollto ml-5" data-toggle="modal" data-target="#myModal">Login</a> --> <!-- Aktifkan untuk Login Modals-->
+      <div id="navLogin" class="displayUnHide">
+        <div class="login-icon scrollto">
+          <ul>
+            <li class="drop-down"><a href="javascript:void(0)"><i class="icon icofont-alarm"></i></a>
+              <ul class="notifBox">
+                <li>
+                  <div class="notifBar">
+                    <div class="card bg-primary text-white">
+                      <div class="card-body">Primary card</div>
+                    </div>
+                  </div>                    
+                </li>
+                <li>
+                  <div class="notifBar">
+                    <div class="card bg-success text-white">
+                      <div class="card-body">Success card</div>
+                    </div>
+                  </div> 
+                </li>
+                <li>
+                  <div class="notifBar">
+                    <div class="card bg-info text-white">
+                      <div class="card-body">Info card</div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="notifBar">
+                    <div class="card bg-warning text-white">
+                      <div class="card-body">Warning card</div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="notifBar">
+                    <div class="card bg-danger text-white">
+                      <div class="card-body">Danger card</div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="notifBar">
+                    <div class="card bg-secondary text-white">
+                      <div class="card-body">Secondary card</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="drop-down"><a href="javascript:void(0)"><i class="icon icofont-user-alt-6"></i></a>
+              <ul  class="loginBox">
+                <li><a href="#">Profil Lengkap</a></li>
+                <!--<li class="drop-down"><a href="#">Deep Drop Down</a>
+                  <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li>-->
+                <li><a href="#">Transaksi</a></li>
+                <li><a href="#">Pelaporan</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>        
+      </div>
+      <div id="navBeforeLogin" class="displayHide">
+        <a href="login.html" class="get-login-btn scrollto ml-5">Login</a>
+        <a href="register.html" class="get-register-btn scrollto">Daftar</a>     
+      </div>
     </div>
   </header><!-- End Header -->
 

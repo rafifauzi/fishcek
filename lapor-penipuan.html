@@ -41,21 +41,21 @@
 <body>
 
  <!-- ======= Header ======= -->
- <header id="header" class="fixed-top ">
+ <header id="header" class="fixed-top">
   <div class="container d-flex align-items-center">
 
-    <h1 class="logo mr-auto"><img src="assets/img/fish.png" alt="" class="img-fluid"><a href="index.html">Fishcek</a></h1> <!-- Logo -->
+    <h1 class="logo mr-auto"><a href="index.html"><img src="assets/img/logo-full.png" alt="" class="img-fluid"></a></h1> <!-- Logo -->
     <!-- Uncomment below if you prefer to use an image logo -->
-    <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/fish.png" alt="" class="img-fluid"></a> -->
+    <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
 
     <nav class="nav-menu d-none d-lg-block">
       <ul>
         <li><a href="index.html">Beranda</a></li>
-        <li><a href="index.html#cekPenipuan">Cek Penipuan</a></li>
+        <li><a href="cekPenipuan.html">Cek Penipuan</a></li>
         <li class="active"><a href="penipuan.html">Penipuan</a></li>
         <li><a href="#portfolio">RekAn</a></li>
-        <!-- <li><a href="#team">Team</a></li>-->
-        <!-- <li class="drop-down"><a href="">Drop Down</a>
+        <!-- <li><a href="#team">Team</a></li>
+        <li class="drop-down"><a href=""><i class="icon icofont-heart"></i></a>
           <ul>
             <li><a href="#">Drop Down 1</a></li>
             <li class="drop-down"><a href="#">Deep Drop Down</a>
@@ -77,8 +77,80 @@
       </ul>
     </nav><!-- .nav-menu -->
     
-    <a href="login.html" class="get-login-btn scrollto ml-5">Login</a>
-    <a href="register.html" class="get-register-btn scrollto">Daftar</a>
+    <!--<a href="#about" class="get-login-btn scrollto ml-5" data-toggle="modal" data-target="#myModal">Login</a> --> <!-- Aktifkan untuk Login Modals-->
+    <div id="navLogin" class="displayUnHide">
+      <div class="login-icon scrollto">
+        <ul>
+          <li class="drop-down"><a href="javascript:void(0)"><i class="icon icofont-alarm"></i></a>
+            <ul class="notifBox">
+              <li>
+                <div class="notifBar">
+                  <div class="card bg-primary text-white">
+                    <div class="card-body">Primary card</div>
+                  </div>
+                </div>                    
+              </li>
+              <li>
+                <div class="notifBar">
+                  <div class="card bg-success text-white">
+                    <div class="card-body">Success card</div>
+                  </div>
+                </div> 
+              </li>
+              <li>
+                <div class="notifBar">
+                  <div class="card bg-info text-white">
+                    <div class="card-body">Info card</div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="notifBar">
+                  <div class="card bg-warning text-white">
+                    <div class="card-body">Warning card</div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="notifBar">
+                  <div class="card bg-danger text-white">
+                    <div class="card-body">Danger card</div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="notifBar">
+                  <div class="card bg-secondary text-white">
+                    <div class="card-body">Secondary card</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="drop-down"><a href="javascript:void(0)"><i class="icon icofont-user-alt-6"></i></a>
+            <ul  class="loginBox">
+              <li><a href="#">Profil Lengkap</a></li>
+              <!--<li class="drop-down"><a href="#">Deep Drop Down</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>-->
+              <li><a href="#">Transaksi</a></li>
+              <li><a href="#">Pelaporan</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>        
+    </div>
+    <div id="navBeforeLogin" class="displayHide">
+      <a href="login.html" class="get-login-btn scrollto ml-5">Login</a>
+      <a href="register.html" class="get-register-btn scrollto">Daftar</a>`        
+    </div>
   </div>
 </header><!-- End Header -->
     
@@ -88,7 +160,8 @@
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
         <ol>
-          <li><a href="index.html">List Penipuan</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="penipuan.html">List Penipuan</a></li>
           <li>Buat laporan</li>
         </ol>
         <h2>Laporkan Penipuan</h2>
@@ -100,126 +173,134 @@
     <section id="portfolio-details" class="hasilPenipuan">
       <div class="container" >
         <div class="hasilPenipuan-container">
-          <div class="row">
-            <div class="col-lg-4 text-center fs-16 m-t-10">
-              <h2>+6285795xxxxx <i class="text-primary bx bxs-check-circle"></i></h2>
-              <div class="rating-review fs-26"><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i></div>
-              <p>(25) Review</p>
-            </div>
-            <div class="col-lg-8">
-              <div class="detailbar">
-                <div class="row">
-                  <div class="col-lg-4 text-center db-l">
-                    <h4>Rating</h4>
-                    <p> 3/5 </p>
-                  </div>
-                  <div class="col-lg-4 text-center db-c">
-                    <h4>Score</h4>
-                    <p> -5 </p>
-                  </div>
-                  <div class="col-lg-4 text-center db-r">
-                    <h4>Share</h4>
-                    <p> 240 </p>
-                  </div>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-          <div class="mt-4">
+          <form action="" method="POST">
             <div class="row">
-              <div class="col-lg-6">
-                <div class="form-group">
-                  <label>Media Penipuan</label>
-                  <select class="form-control" id="media" name="media">
-                    <option value="p0" selected hidden>-- Pilih Media Penipuan --</option>
-                    <option value="p1" id="p1">No Rekening</option>
-                    <option value="p2" id="p2">No Telepon</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <div id="noRekening" class="displayUnHide">
-                    <label>Nama Bank</label>
-                    <select class="form-control" id="bank" name="bank">
-                      <option value="b0" selected hidden>-- Pilih Bank --</option>
-                      <option value="b1">Bank Negara Indonesia (BNI)</option>
-                      <option value="b2">Bank Rakyat Indonesia (BRI)</option>
-                      <option value="b3">Bank Tabungan Negara (BTN)</option>
-                      <option value="b4">Bank Mandiri</option>
-                      <option value="b5">Bank Central Asia (BCA)</option>
-                      <option value="b6">Bank Cimb Niaga</option>
-                      <option value="b7">Bank Danamon Indonesia</option>
-                      <option value="b8">Bank BNI Syariah</option>
-                      <option value="b9">Bank Bukopin</option>
-                      <option value="b10">Bank Mega</option>
-                      <option value="b11">Bank Sinarmas</option>
-                      <option value="b12">Bank OCBC NISP</option>
-                    </select>
-                  </div>                 
-                </div>
-                <div class="form-group">
-                  <div id="noTelepon" class="displayUnHide">
-                    <label>Nama Operator</label>
-                    <select class="form-control" id="operator" name="operator">
-                      <option value="op0" selected hidden>-- Pilih Operator --</option>
-                      <option value="op1">Telkomsel</option>
-                      <option value="op2">Indosat</option>
-                      <option value="op3">XL / AXIS</option>
-                      <option value="op4">Tri</option>
-                      <option value="op5">By.U</option>
-                      <option value="op6">Smartfren</option>
-                    </select>
-                  </div>                  
-                </div>
-                <div class="form-group">
-                  <label>Platform</label>
-                    <select class="form-control" id="platform" name="platform">
-                      <option value="pl0" selected hidden>-- Pilih Platform --</option>
-                      <option value="pl1">Whatsapp</option>
-                      <option value="pl2">Instagram</option>
-                      <option value="pl3">Line</option>
-                      <option value="pl4">Facebook</option>
-                      <option value="pl5">Twitter</option>
-                      <option value="pl6">Telegram</option>
-                      <option value="pl7">Website</option>
-                      <option value="pl8">Aplikasi Mobile</option>
-                    </select>
-                </div>
+              <div class="col-lg-4 text-center fs-16 m-t-10">
+                <h2>+6285795xxxxx <i class="text-primary bx bxs-check-circle"></i></h2>
+                <div class="rating-review fs-26"><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i></div>
+                <p>(25) Review</p>
               </div>
-              <div class="col-lg-6">
-                <div class="form-group">
-                  <label>Nama Pemilik</label>
-                  <input type="text" class="input100 form-control" name="namaPemilik" placeholder="Nama Pemilik Rekening atau No Telepon">
-                </div>
-                <div class="form-group">
-                  <div id="formRekening" class="displayUnHide">
-                    <label>No Rekening</label>
-                    <input type="number" class="input100 form-control" name="noRekening" placeholder="Nomor Rekening Terduga">
+              <div class="col-lg-8">
+                <div class="detailbar">
+                  <div class="row">
+                    <div class="col-lg-4 text-center db-l">
+                      <h4>Rating</h4>
+                      <p> 3/5 </p>
+                    </div>
+                    <div class="col-lg-4 text-center db-c">
+                      <h4>Score</h4>
+                      <p> -5 </p>
+                    </div>
+                    <div class="col-lg-4 text-center db-r">
+                      <h4>Share</h4>
+                      <p> 240 </p>
+                    </div>
                   </div>
                 </div>
-                <div class="form-group">
-                  <div id="formTelepon" class="displayUnHide">
-                    <label>No Telepon</label>
-                    <input type="number" class="input100 form-control" name="noTelepon" placeholder="Nomor Telepon Terduga">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div id="formTelepon" class="displayUnHide">
-                    <label>Kerugian (Rp)</label>
-                    <input type="number" class="input100 form-control" name="kerugian" placeholder="Total Kerugian yang Dialami">
-                  </div>
-                </div>
+                
               </div>
             </div>
-            <div class="form-group">
-              <label>Kronologi</label>
-              <textarea class="form-control" name="kronologi" id="kronologi" rows="10" col="100" maxlength="100" placeholder="Ceritakan Kejadian yang Dialami"></textarea>
-              <div class="countRow text-muted text-right fs-12 p-t-5"><span id="countRow">Maksimal 1000 Karakter</span></div>
+            <div class="mt-4">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label>Media Penipuan</label>
+                    <select class="form-control" id="media" name="media">
+                      <option value="p0" selected hidden>-- Pilih Media Penipuan --</option>
+                      <option value="p1" id="p1">No Rekening</option>
+                      <option value="p2" id="p2">No Telepon</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <div id="noRekening" class="displayUnHide">
+                      <label>Nama Bank</label>
+                      <select class="form-control" id="bank" name="bank">
+                        <option value="b0" selected hidden>-- Pilih Bank --</option>
+                        <option value="b1">Bank Negara Indonesia (BNI)</option>
+                        <option value="b2">Bank Rakyat Indonesia (BRI)</option>
+                        <option value="b3">Bank Tabungan Negara (BTN)</option>
+                        <option value="b4">Bank Mandiri</option>
+                        <option value="b5">Bank Central Asia (BCA)</option>
+                        <option value="b6">Bank Cimb Niaga</option>
+                        <option value="b7">Bank Danamon Indonesia</option>
+                        <option value="b8">Bank BNI Syariah</option>
+                        <option value="b9">Bank Bukopin</option>
+                        <option value="b10">Bank Mega</option>
+                        <option value="b11">Bank Sinarmas</option>
+                        <option value="b12">Bank OCBC NISP</option>
+                      </select>
+                    </div>                 
+                  </div>
+                  <div class="form-group">
+                    <div id="noTelepon" class="displayUnHide">
+                      <label>Nama Operator</label>
+                      <select class="form-control" id="operator" name="operator">
+                        <option value="op0" selected hidden>-- Pilih Operator --</option>
+                        <option value="op1">Telkomsel</option>
+                        <option value="op2">Indosat</option>
+                        <option value="op3">XL / AXIS</option>
+                        <option value="op4">Tri</option>
+                        <option value="op5">By.U</option>
+                        <option value="op6">Smartfren</option>
+                      </select>
+                    </div>                  
+                  </div>
+                  <div class="form-group">
+                    <label>Platform</label>
+                      <select class="form-control" id="platform" name="platform">
+                        <option value="pl0" selected hidden>-- Pilih Platform --</option>
+                        <option value="pl1">Whatsapp</option>
+                        <option value="pl2">Instagram</option>
+                        <option value="pl3">Line</option>
+                        <option value="pl4">Facebook</option>
+                        <option value="pl5">Twitter</option>
+                        <option value="pl6">Telegram</option>
+                        <option value="pl7">Website</option>
+                        <option value="pl8">Aplikasi Mobile</option>
+                      </select>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label>Nama Pemilik</label>
+                    <input type="text" class="input100 form-control" name="namaPemilik" placeholder="Nama Pemilik Rekening atau No Telepon">
+                  </div>
+                  <div class="form-group">
+                    <div id="formRekening" class="displayUnHide">
+                      <label>No Rekening</label>
+                      <input type="number" class="input100 form-control" name="noRekening" placeholder="Nomor Rekening Terduga">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div id="formTelepon" class="displayUnHide">
+                      <label>No Telepon</label>
+                      <input type="number" class="input100 form-control" name="noTelepon" placeholder="Nomor Telepon Terduga">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div id="formTelepon" class="displayUnHide">
+                      <label>Kerugian (Rp)</label>
+                      <input type="number" class="input100 form-control" name="kerugian" placeholder="Total Kerugian yang Dialami">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Kronologi</label>
+                <textarea class="form-control" name="kronologi" id="kronologi" rows="10" col="100" maxlength="100" placeholder="Ceritakan Kejadian yang Dialami"></textarea>
+                <div class="countRow text-muted text-right fs-12 p-t-5"><span id="countRow">Maksimal 1000 Karakter</span></div>
+              </div>
+
+              <div class="form-group">
+                <label>Upload Bukti Penipuan <span class="fs-12 text-muted">(Max 1mb , JPG atau PNG)</span></label>
+                <input class="form-control-file" type="file" name="bukti[]" id="bukti" multiple>
+
+              </div>
+              <div class="text-center">
+                <button class="get-send-btn">Simpan</button> <button class="get-cancel-btn">Batal</button>
+              </div>
             </div>
-            <div class="text-center">
-              <button class="get-send-btn">Simpan</button> <button class="get-cancel-btn">Batal</button>
-            </div>
-          </div>
+          </form>
         </div>
 
       </div>

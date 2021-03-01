@@ -28,6 +28,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/util.css" rel="stylesheet">
+
   <!-- =======================================================
   * Template Name: Arsha - v2.3.0
   * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
@@ -48,8 +49,8 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Beranda</a></li>
-          <li><a href="#cekPenipuan">Cek Penipuan</a></li>
+          <li><a href="index.html">Beranda</a></li>
+          <li class="active"><a href="cekPenipuan.html">Cek Penipuan</a></li>
           <li><a href="penipuan.html">Penipuan</a></li>
           <li><a href="#portfolio">RekAn</a></li>
           <!-- <li><a href="#team">Team</a></li>
@@ -202,13 +203,13 @@
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
+    <section id="breadcrumbs" class="breadcrumbs" >
       <div class="container">
         <ol>
-          <li><a href="index.html">Pengguna</a></li>
-          <li>Ulasan</li>
+          <li><a href="index.html">Home</a></li>
+          <li>Cek Penipuan</li>
         </ol>
-        <h2>Tulis Ulasan</h2>
+        <h2>Cek Penipuan</h2>
 
       </div>
     </section><!-- End Breadcrumbs -->
@@ -218,97 +219,103 @@
       <div class="container" >
         <div class="hasilPenipuan-container">
           <div class="row">
-            <div class="col-lg-4 text-center">
-              <h2>+6285795xxxxx <i class="bx bxs-check-circle"></i></h2>
-              <p class="rating-review"><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i></p>
-              <p>(25) Review</p>
-              <button type="submit" class="diskusi-btn">Diskusi</button>
+            <div class="col-lg-6">
+              <label>Pencarian Berdasarkan</label>
+              <select class="form-control" id="selectKategori">
+                <option value="0" selected hidden>--Pilih Fitler--</option>
+                <option value="1">No Rekening</option>
+                <option value="2">No Telepon</option>
+              </select>
             </div>
-            <div class="col-lg-8">
-              <div class="detailbar">
-                <div class="progress">
-                  <span class="skill"><i class="bx bxs-star"></i> <i class="bx bxs-star"></i> <i class="bx bxs-star"></i> <i class="bx bxs-star"></i> <i class="bx bxs-star"></i> <i class="val">12 Review</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-
-                <div class="progress">
-                  <span class="skill"><i class="bx bxs-star"></i> <i class="bx bxs-star"></i> <i class="bx bxs-star"></i> <i class="bx bxs-star"></i> <i class="bx bx-star"></i> <i class="val">8 Review</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-
-                <div class="progress">
-                  <span class="skill"><i class="bx bxs-star"></i> <i class="bx bxs-star"></i> <i class="bx bxs-star"></i> <i class="bx bx-star"></i> <i class="bx bx-star"></i> <i class="val">5 Review</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-
-                <div class="progress">
-                  <span class="skill"><i class="bx bxs-star"></i> <i class="bx bxs-star"></i> <i class="bx bx-star"></i> <i class="bx bx-star"></i> <i class="bx bx-star"></i> <i class="val">0 Review</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-
-                <div class="progress">
-                  <span class="skill"><i class="bx bxs-star"></i> <i class="bx bx-star"></i> <i class="bx bx-star"></i> <i class="bx bx-star"></i> <i class="bx bx-star"></i> <i class="val">0 Review</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              
+            <div class="col-lg-6">
+              <label>Pencarian Berdasarkan</label>
+              <input type="number" name="pencarian" class="form-control" placeholder="Masukan No Telepon atau No Rekening">
             </div>
           </div>
-          <h3>Ulasan Kamu</h3>
-          <div class="m-t-20 p-20">
-            <div class="row">
-              <div class="col-lg-6 col-md-12">
-                <div class="form-group">
-                  <label>Nama Lengkap</label>
-                  <input type="text" class="form-control" placeholder="Masukan Nama Lengkap Kamu">
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-12">
-                <div class="form-group">
-                  <label>Rating</label>
-                  <div class="rating rating2">
-                    <a href="javascript:void(0)" id="ratingStar5"><span class="ratingStar5">5</span><i class="bx bxs-star"></i></a>
-                    <a href="javascript:void(0)" id="ratingStar4"><span class="ratingStar4">4</span><i class="bx bxs-star"></i></a>
-                    <a href="javascript:void(0)" id="ratingStar3"><span class="ratingStar5">3</span><i class="bx bxs-star"></i></a>
-                    <a href="javascript:void(0)" id="ratingStar2"><span class="ratingStar5">2</span><i class="bx bxs-star"></i></a>
-                    <a href="javascript:void(0)" id="ratingStar1"><span class="ratingStar5">1</span><i class="bx bxs-star"></i></a>
+          <div class="form-group text-center m-t-20">
+            <a href="result-report.html" class="get-send-btn">Cek Penipuan</a>
+          </div>
+
+          <h3>Paling Sering Dicari Kategori <span id="titleKategori">Rekening</span></h3>
+          <div class="listCekPenipuan">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-1 col-md-12">
+                    <div class="review-img">
+                      &nbsp;
+                    </div>       
                   </div>
-                  <input type="text" name="ratingInput" class="displayHide" id="ratingInput">
+                  <div class="col-lg-2 col-md-12">
+                    <h2>Username <br><span>02 Februari 2021</span></h2>
+                  </div>
+                  <div class="col-lg-9 col-md-12">
+                    <div class="rating-review"><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bx-star"></i></div>
+                    <p class="review-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec commodo urna, in ultrices nunc. Sed aliquet lacus est, sit amet facilisis arcu porta et. Nullam ac molestie metus. Duis vel mauris in magna laoreet porta. Mauris in pellentesque leo.</p>
+                  </div>
                 </div>
-
-                <!--<div class="rating">
-                <input name="stars" id="e5" type="radio"></a><label for="e5"><i class="bx bxs-star"></i></label>
-                <input name="stars" id="e4" type="radio"></a><label for="e4"><i class="bx bxs-star"></i></label>
-                <input name="stars" id="e3" type="radio"></a><label for="e3"><i class="bx bxs-star"></i></label>
-                <input name="stars" id="e2" type="radio"></a><label for="e2"><i class="bx bxs-star"></i></label>
-                <input name="stars" id="e1" type="radio"></a><label for="e1"><i class="bx bxs-star"></i></label>
-                </div>  -->
-
-
               </div>
-            </div> 
-            <div class="form-group">
-              <label>Ulasan Kamu</label>
-              <textarea class="form-control" name="ulasan" id="ulasan" rows="5" col="100" maxlength="100" placeholder="Tulis Ulasan Kamu Mengenai Nomor Telepon/Rekening Ini"></textarea>
-              <div class="countRow text-muted text-right fs-12 p-t-5"><span id="ulasanCountRow">Maksimal 250 Karakter</span></div>
             </div>
-            <div class="text-center">
-              <button class="get-send-btn">Kirim Ulasan</button> <button class="get-cancel-btn">Batal</button>
-            </div>
-          </div>                   
-          
-        </div>
 
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-1 col-md-12">
+                    <div class="review-img">
+                      &nbsp;
+                    </div>       
+                  </div>
+                  <div class="col-lg-2 col-md-12">
+                    <h2>Username <br><span>02 Februari 2021</span></h2>
+                  </div>
+                  <div class="col-lg-9 col-md-12">
+                    <div class="rating-review"><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bx-star"></i></div>
+                    <p class="review-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec commodo urna, in ultrices nunc. Sed aliquet lacus est, sit amet facilisis arcu porta et. Nullam ac molestie metus. Duis vel mauris in magna laoreet porta. Mauris in pellentesque leo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-1 col-md-12">
+                    <div class="review-img">
+                      &nbsp;
+                    </div>       
+                  </div>
+                  <div class="col-lg-2 col-md-12">
+                    <h2>Username <br><span>02 Februari 2021</span></h2>
+                  </div>
+                  <div class="col-lg-9 col-md-12">
+                    <div class="rating-review"><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bx-star"></i></div>
+                    <p class="review-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec commodo urna, in ultrices nunc. Sed aliquet lacus est, sit amet facilisis arcu porta et. Nullam ac molestie metus. Duis vel mauris in magna laoreet porta. Mauris in pellentesque leo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-1 col-md-12">
+                    <div class="review-img">
+                      &nbsp;
+                    </div>       
+                  </div>
+                  <div class="col-lg-2 col-md-12">
+                    <h2>Username <br><span>02 Februari 2021</span></h2>
+                  </div>
+                  <div class="col-lg-9 col-md-12">
+                    <div class="rating-review"><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bx-star"></i></div>
+                    <p class="review-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec commodo urna, in ultrices nunc. Sed aliquet lacus est, sit amet facilisis arcu porta et. Nullam ac molestie metus. Duis vel mauris in magna laoreet porta. Mauris in pellentesque leo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
       </div>
     </section><!-- End Portfolio Details Section -->
 
